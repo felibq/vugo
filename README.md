@@ -1,6 +1,6 @@
-# vugo
+# vugo [![npm](https://img.shields.io/npm/v/vugo.svg?maxAge=2592000?style=flat-square)]()
 
-> A Vue.js project
+> UI Components with Vue.js 2.0
 
 ## Build Setup
 
