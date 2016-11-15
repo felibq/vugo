@@ -71,5 +71,14 @@ module.exports = function (config) {
         { type: 'text-summary' },
       ]
     },
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-webpack',
+      'karma-sourcemap-loader',
+      'karma-mocha',
+      'karma-sinon-chai',
+      'karma-coverage',
+      'karma-spec-reporter'
+    ]
   });
 };
