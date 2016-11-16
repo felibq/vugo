@@ -1,6 +1,8 @@
 <template lang="html">
-  <div class="home page">
-    <h1>Home Page</h1>
+  <div class="slide-bar">
+    <ul>
+      <li></li>
+    </ul>
   </div>
 </template>
 
@@ -9,14 +11,13 @@ export default {
   data() {
     return {};
   },
-  computed: {},
 };
 </script>
 
 <style lang="less">
-.home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slide-bar{
+  width: 280px;
+  height: 100%;
+  background: #f5f5f5;
 }
 </style>

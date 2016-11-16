@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="">
-    about
+  <div class="about page">
+    <h1>About Page</h1>
   </div>
 </template>
 
@@ -12,5 +12,10 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="less">
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

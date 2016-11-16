@@ -3,7 +3,7 @@ import Doc from './views/doc';
 import About from './views/about';
 
 export default {
-  mode: 'hash',
+  mode: 'history',
   routes: [
     { path: '/', component: Home },
     { path: '/doc', component: Doc },
