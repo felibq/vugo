@@ -7,16 +7,10 @@
 <script>
 export default {
   data () {
-    return {}
+    return {};
   },
-  computed: {},
-  ready () {},
-  attached () {},
-  methods: {},
-  components: {}
-}
+};
 </script>
 
-<style lang="css">
-
+<style lang="less">
 </style>

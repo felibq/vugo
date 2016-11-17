@@ -1,3 +1,4 @@
 {
-  
+  "alert": "../components/alert/index.js",
+  "switch": "../components/switch/index.js"
 }

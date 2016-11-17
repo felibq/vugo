@@ -1,3 +1,3 @@
 import alert from './index.vue';
 
-export alert;
+export default alert;
