@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import vHeader from 'components/header';
+import vHeader from './views/header';
 
 export default {
   name: 'app',
