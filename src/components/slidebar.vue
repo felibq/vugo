@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="slide-bar">
     <ul class="menus menus--lv1">
+      <li><h3>Document</h3></li>
       <li v-for="(val, key) in routerConfigs">
         {{key}}
         <ul class="menus menus--lv2">
@@ -27,31 +28,34 @@ export default {
 
 <style lang="less">
 .slide-bar{
-  width: 280px;
+  width: 300px;
   height: 100%;
-  background: #f5f5f5;
-  padding-top: 30px;
+  padding-top: 60px;
+  color: #333;
   box-sizing: border-box;
   .menus{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 50px;
     text-align: left;
     li{
-      line-height: 35px;
       list-style: none;
     }
   }
   .menus--lv1{
     &>li{
-      color: #666;
+      font-size: 14px;
+      padding: 10px 0;
     }
   }
   .menus--lv2{
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
     a{
       text-decoration: none;
-
+      font-size: 12px;
+      line-height: 24px;
+      color: #333;
     }
   }
 }
