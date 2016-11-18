@@ -1,8 +1,6 @@
 # vugo [![npm](https://img.shields.io/npm/v/vugo.svg?maxAge=2592000?style=flat-square)]()
 
-> UI Components with Vue.js 2.0
-
-**In Processing**
+> Work in progress
 
 ## Build Setup
 
