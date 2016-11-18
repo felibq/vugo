@@ -3,6 +3,7 @@ const config = {
     '/layout': 'Layout 布局',
     '/font': 'Font 字体',
     '/color': 'Color 颜色',
+    '/icon': 'Icon 图标',
     '/button': 'Button 按钮',
   },
   View: {

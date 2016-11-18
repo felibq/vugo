@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    switch component
+    <h1>Icon</h1>
   </div>
 </template>
 
@@ -12,5 +12,5 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="css">
 </style>
