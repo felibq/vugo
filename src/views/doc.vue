@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import vSlidebar from 'components/slidebar';
+import vSlidebar from './slidebar';
 
 export default {
   data() {

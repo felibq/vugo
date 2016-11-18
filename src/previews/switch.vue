@@ -1,13 +1,19 @@
 <template lang="html">
   <div class="">
-    switch component
+    <h1>Switch</h1>
+    <v-switch></v-switch>
   </div>
 </template>
 
 <script>
+import vSwitch from 'components/switch/index';
+
 export default {
   data() {
     return {};
+  },
+  components: {
+    vSwitch,
   },
 };
 </script>
