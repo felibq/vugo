@@ -1,7 +1,9 @@
 <template lang="html">
   <header class="header">
-    <h3 class="header__title">Vugo</h3>
-    <div class="header_nav">
+    <h3 class="header__title">
+      <router-link to="/"><i class="header__title--logo"></i>Vugo</router-link>
+    </h3>
+    <div class="header__nav">
       <router-link to="/">Home</router-link>
       <router-link to="/doc">Doc</router-link>
       <router-link to="/about">About</router-link>
@@ -25,19 +27,30 @@ export default {
   background: @default-color;
   padding: 0 50px;
   display: flex;
-  .header__title{
-    line-height: @header-height;
-    font-size: 26px;
+  a{
+    text-decoration: none;
     color: #fff;
   }
-  .header_nav{
+  .header__title{
+    line-height: @header-height;
+    font-size: 20px;
+    color: #fff;
+    .header__title--logo{
+      display: inline-block;
+      padding-left: @header-height;
+      height: @header-height;
+      background: url("~assets/vugo.png") center center no-repeat;
+      background-size: @header-height - 18;
+      float: left;
+    }
+  }
+  .header__nav{
     flex: 1;
     text-align: right;
     font-size: 14px;
+    font-weight: 600;
     line-height: @header-height;
     a{
-      text-decoration: none;
-      color: #fff;
       padding: 0 20px;
     }
   }
