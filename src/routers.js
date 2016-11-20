@@ -1,4 +1,5 @@
 import Home from './views/home';
+import Start from './views/start';
 import Doc from './views/doc';
 import About from './views/about';
 
@@ -21,6 +22,7 @@ export default {
   mode: 'history',
   routes: [
     { path: '/', component: Home },
+    { path: '/start', component: Start },
     { path: '/doc',
       component: Doc,
       children: [

@@ -5,7 +5,8 @@
     </h3>
     <div class="header__nav">
       <router-link to="/">Home</router-link>
-      <router-link to="/doc">Doc</router-link>
+      <router-link to="/start">Get Started</router-link>
+      <router-link to="/doc">Documentation</router-link>
       <router-link to="/about">About</router-link>
     </div>
   </header>
