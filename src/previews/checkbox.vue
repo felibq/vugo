@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import vCheckbox from 'components/checkbox/index';
+import vCheckbox from 'packages/checkbox/index';
 
 export default {
   data() {

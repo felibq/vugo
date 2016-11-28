@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import vSwitch from 'components/switch/index';
+import vSwitch from 'packages/switch/index';
 
 export default {
   data() {
