@@ -36,7 +36,7 @@ webpackConfig.module.preLoaders = webpackConfig.module.preLoaders || [];
 webpackConfig.module.preLoaders.unshift({
   test: /\.js$/,
   loader: 'isparta',
-  include: path.resolve(projectRoot, 'src'),
+  include: /src|packages/
 });
 
 // only apply babel for test files when using isparta
@@ -71,14 +71,5 @@ module.exports = function (config) {
         { type: 'text-summary' },
       ]
     },
-    plugins: [
-      'karma-phantomjs-launcher',
-      'karma-webpack',
-      'karma-sourcemap-loader',
-      'karma-mocha',
-      'karma-sinon-chai',
-      'karma-coverage',
-      'karma-spec-reporter'
-    ]
   });
 };

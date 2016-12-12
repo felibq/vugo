@@ -1,20 +1,13 @@
 <template lang="html">
   <div class="">
-
+    <p>alert</p>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {}
-  },
   computed: {},
-  ready () {},
-  attached () {},
-  methods: {},
-  components: {}
-}
+};
 </script>
 
 <style lang="css">

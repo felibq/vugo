@@ -1,5 +1,5 @@
 <template lang="html">
-  <label class="v-checkbox">
+  <label class="v-checkbox" :class="typeClass">
     <input class="v-checkbox__input" :checked="checked" :disabled="disabled" type="checkbox">
     <span class="v-checkbox__icon">
       <i class=""></i>
@@ -10,8 +10,9 @@
 
 <script>
 export default {
+  name: 'v-checkbox',
   props: {
-    className: {
+    type: {
       type: String,
       default: '',
     },
@@ -24,8 +25,10 @@ export default {
       default: false,
     },
   },
-  data() {
-    return {};
+  computed: {
+    typeClass() {
+      return `v-checkbox--${this.type}`;
+    },
   },
 };
 </script>

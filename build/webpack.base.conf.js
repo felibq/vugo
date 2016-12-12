@@ -26,7 +26,8 @@ module.exports = {
       'vue$': 'vue/dist/vue',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../components')
+      'components': path.resolve(__dirname, '../src/components'),
+      'packages': path.resolve(__dirname, '../packages')
     }
   },
   resolveLoader: {
@@ -44,7 +45,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'eslint',
         include: projectRoot,
-        exclude: /node_modules/
+        exclude: /node_modules|test/
       }
     ],
     loaders: [
