@@ -1,8 +1,14 @@
 <template lang="html">
-  <label class="switch-label">
-    <input type="checkbox" class="v-switch switch-animbg switch-anim">
-    <span>带过渡效果</span>
-  </label>
+  <div class="">
+    <label class="switch-label">
+      <input type="checkbox" class="v-switch switch-animbg">
+      <span>带背景过渡效果</span>
+    </label>
+    <label class="switch-label">
+      <input type="checkbox" class="v-switch switch-anim">
+      <span>带动画过渡效果</span>
+    </label>
+  </div>
 </template>
 
 <script>
