@@ -1,7 +1,9 @@
 <template lang="html">
-  <div class="">
-    <h1>Checkbox</h1>
-    <v-checkbox>选项A</v-checkbox>
+  <div class="doc__page">
+    <h3 class="doc__title">Checkbox 多选框</h3>
+    <div class="doc__content">
+      <v-checkbox>选项A</v-checkbox>
+    </div>
     <br>
     <v-checkbox :checked="true">选项B</v-checkbox>
     <br>

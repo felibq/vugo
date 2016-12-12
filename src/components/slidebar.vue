@@ -30,13 +30,16 @@ export default {
 .slide-bar{
   width: 300px;
   height: 100%;
-  padding-top: 60px;
+  padding: 60px 50px;
   color: #333;
   box-sizing: border-box;
+  & > ul{
+    border-right: 1px solid #eee;
+    min-height: 100%;
+  }
   .menus{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 50px;
     text-align: left;
     li{
       list-style: none;
@@ -44,7 +47,7 @@ export default {
   }
   .menus--lv1{
     &>li{
-      font-size: 14px;
+      font-size: 15px;
       padding: 10px 0;
     }
   }
@@ -53,7 +56,7 @@ export default {
     padding-top: 5px;
     a{
       text-decoration: none;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 24px;
       color: #333;
     }
