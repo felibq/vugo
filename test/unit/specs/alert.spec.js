@@ -12,5 +12,4 @@ describe('Alert component', () => {
     const el = getRenderedText(Alert);
     expect(el.textContent).to.equal('alert');
   });
-
 });
