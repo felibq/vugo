@@ -28,10 +28,11 @@ export default {
 
 <style lang="less">
 .slide-bar{
-  width: 300px;
+  width: 330px;
   height: 100%;
   padding: 60px 50px;
   color: #333;
+  padding-right: 80px;
   box-sizing: border-box;
   & > ul{
     border-right: 1px solid #eee;
@@ -47,7 +48,7 @@ export default {
   }
   .menus--lv1{
     &>li{
-      font-size: 15px;
+      font-size: 16px;
       padding: 10px 0;
     }
   }
@@ -56,8 +57,8 @@ export default {
     padding-top: 5px;
     a{
       text-decoration: none;
-      font-size: 13px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 30px;
       color: #333;
     }
   }
