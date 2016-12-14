@@ -1,29 +1,14 @@
-<template lang="html">
-  <label class="switch-label">
-    <input type="checkbox" class="v-switch switch-animbg switch-anim">
-    <span>带过渡效果</span>
-  </label>
-</template>
-
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
-
-<style lang="less">
-  @checkedColor:#279AFC;
+@checkedColor:#279AFC;
   @time:0.4s;
   .switch-label{
     display: flex;
     display: -webkit-flex;
     align-items: center;
-    span{
-      margin-left: 10px;
-      line-height: 50px;
-    }
+
+    // .slot{
+    //   margin-left: 10px;
+    //   line-height: 50px;
+    // }
   }
 	.v-switch{
 		outline: none;
@@ -33,6 +18,7 @@ export default {
 		border-radius: 20px;
 		border: 1px solid #dfdfdf;
 		-webkit-appearance:none;
+    margin-right: 5px;
 		&:before{
 			content: '';
 			width:29px;
@@ -50,8 +36,21 @@ export default {
 				left:21px;
 			}
 		}
-
-    &.switch-animbg {
+    &.v-switch-bg {
+      transition: border cubic-bezier(0, 0, 0, 1) @time, box-shadow cubic-bezier(0, 0, 0, 1) @time;
+      &:before {
+        transition: left 0.3s;
+      }
+      &:checked {
+        box-shadow: @checkedColor 0 0 0 16px inset;
+        background-color: @checkedColor;
+        transition: border ease @time, box-shadow ease @time, background-color ease @time*3;
+        &:before {
+          transition: left 0.3s;
+        }
+      }
+    }
+    &.v-switch-tran {
       transition: background-color ease @time;
       &:before {
         transition: left 0.3s;
@@ -66,19 +65,5 @@ export default {
       }
     }
 
-    &.switch-anim {
-      transition: border cubic-bezier(0, 0, 0, 1) @time, box-shadow cubic-bezier(0, 0, 0, 1) @time;
-      &:before {
-        transition: left 0.3s;
-      }
-      &:checked {
-        box-shadow: @checkedColor 0 0 0 16px inset;
-        background-color: @checkedColor;
-        transition: border ease @time, box-shadow ease @time, background-color ease @time*3;
-        &:before {
-          transition: left 0.3s;
-        }
-      }
-    }
+    
 	}
-</style>
