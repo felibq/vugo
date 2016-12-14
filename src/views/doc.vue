@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="doc page">
+  <div class="document page">
     <v-slidebar></v-slidebar>
-    <div class="doc-content">
+    <div class="document-content">
       <router-view></router-view>
     </div>
   </div>
@@ -21,13 +21,12 @@ export default {
 </script>
 
 <style lang="less">
-.doc{
+.document{
   display: flex;
-  .doc-content{
+  .document-content{
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 60px;
   }
 }
 </style>
